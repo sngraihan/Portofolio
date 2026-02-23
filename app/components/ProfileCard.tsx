@@ -492,7 +492,8 @@ const ProfileCardComponent = ({
                 className="h-full w-full object-cover object-top will-change-transform transition-transform duration-[120ms] ease-out"
                 src={avatarUrl}
                 alt={`${name || "User"} avatar`}
-                loading="lazy"
+                width={600}
+                height={800}
                 style={{
                   transformOrigin: "50% 100%",
                   transform:
@@ -526,7 +527,8 @@ const ProfileCardComponent = ({
                         className="w-full h-full object-cover rounded-full"
                         src={miniAvatarUrl || avatarUrl}
                         alt={`${name || "User"} mini avatar`}
-                        loading="lazy"
+                        width={48}
+                        height={48}
                         onError={(e) => {
                           const t = e.target as HTMLImageElement;
                           t.style.opacity = "0.5";

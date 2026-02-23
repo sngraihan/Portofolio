@@ -120,10 +120,7 @@ export default function Footer() {
           <ArrowUp className="h-5 w-5 text-primary" />
         </div>
         <span className="text-[10px] font-bold uppercase tracking-wider text-primary">
-          Back
-        </span>
-        <span className="text-[10px] font-medium text-primary/60 -mt-1.5">
-          to top
+          Back to top
         </span>
       </a>
     </footer>

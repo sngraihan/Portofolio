@@ -45,7 +45,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    url: "https://linkedin.com/in/raihan-andi-saungnaga",
+    url: "https://www.linkedin.com/in/raihan-andi-saungnaga",
     icon: "linkedin",
   },
 ];
@@ -102,7 +102,7 @@ export const projects: Project[] = [
     title: "E-Dispatch and Tool Management System",
     description:
       "web-based warehouse management system and waybills for inter-warehouse shipments",
-    image: "/",
+    image: "/projects/e-dispatch.png",
     tags: ["Laravel", "Tailwind", "PostgreSQL", "Node.js"],
     github: "https://github.com/sngraihan/E-Dispatch_and_Tool_Management_System",
   },

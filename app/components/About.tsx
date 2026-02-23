@@ -48,7 +48,7 @@ export default function About() {
             className="mb-2 text-lg font-light tracking-widest text-primary/70"
             delay={60}
           />
-          <h2 className="text-4xl font-light tracking-tight sm:text-5xl md:text-6xl">
+          <h2 className="text-4xl font-light tracking-tight sm:text-5xl md:text-6xl" aria-label="about me.">
             <TypingText
               text="about me."
               speed={60}

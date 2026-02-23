@@ -389,6 +389,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <a
         href="#about"
+        aria-label="Scroll to about section"
         className="absolute bottom-10 left-1/2 z-10 -translate-x-1/2
                    text-muted-foreground/50 transition-colors hover:text-primary"
         style={{ animation: "float 2.5s ease-in-out infinite" }}

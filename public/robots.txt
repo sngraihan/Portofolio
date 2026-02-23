@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raihanasng-portofolio.vercel.app/sitemap.xml

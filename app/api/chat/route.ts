@@ -41,7 +41,24 @@ Raihan is a passionate AI Engineering student who loves building intelligent sys
 **Tools:** Git, Docker, VS Code, Linux, Jupyter, Google Colab
 
 ## Projects
-untuk sementara jawab: to be annouced gitu 
+ {
+    id: "sentiment-analysis",
+    title: "Tokopedia Sentiment Analysis",
+    description:
+      "Sentiment analysis of Tokopedia product reviews using a machine learning approach with IBM Granite large language model .",
+    image: "/",
+    tags: ["Python", "NLP", "Scikit-Learn", "Pandas"],
+    github: "https://github.com/sngraihan/tokopedia-sentiment-capstone",
+  },
+  {
+    id: "e-dispatch",
+    title: "E-Dispatch and Tool Management System",
+    description:
+      "web-based warehouse management system and waybills for inter-warehouse shipments",
+    image: "/",
+    tags: ["Laravel", "Tailwind", "PostgreSQL", "Node.js"],
+    github: "https://github.com/sngraihan/E-Dispatch_and_Tool_Management_System",
+  },
 
 ## Stats
 - 10+ Projects completed

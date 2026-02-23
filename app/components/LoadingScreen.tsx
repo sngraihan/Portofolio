@@ -62,10 +62,10 @@ export default function LoadingScreen() {
       </div>
 
       {/* Name */}
-      <h1 className="mt-6 text-2xl font-bold tracking-tight sm:text-3xl">
+      <div className="mt-6 text-2xl font-bold tracking-tight sm:text-3xl" role="status" aria-label="Loading">
         {personalInfo.nickname}
         <span className="text-primary">.</span>
-      </h1>
+      </div>
 
       {/* Loading bar — React state-driven */}
       <div className="mt-6 h-[3px] w-40 overflow-hidden rounded-full bg-border/30">

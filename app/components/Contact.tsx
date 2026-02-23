@@ -174,7 +174,7 @@ export default function Contact() {
             className="mb-2 text-lg font-light tracking-widest text-primary/70"
             delay={60}
           />
-          <h2 className="mb-4 text-4xl font-light tracking-tight sm:text-5xl md:text-6xl">
+          <h2 className="mb-4 text-4xl font-light tracking-tight sm:text-5xl md:text-6xl" aria-label="get in touch.">
             <TypingText
               text="get in touch."
               speed={60}
@@ -277,7 +277,9 @@ export default function Contact() {
 
                 <form className="space-y-4" onSubmit={handleSubmit}>
                   <GlowReveal className="rounded-xl">
+                    <label htmlFor="contact-name" className="sr-only">Your Name</label>
                     <input
+                      id="contact-name"
                       type="text"
                       placeholder="Your Name"
                       required
@@ -291,7 +293,9 @@ export default function Contact() {
                     />
                   </GlowReveal>
                   <GlowReveal className="rounded-xl">
+                    <label htmlFor="contact-email" className="sr-only">Your Email</label>
                     <input
+                      id="contact-email"
                       type="email"
                       placeholder="Your Email"
                       required
@@ -305,7 +309,9 @@ export default function Contact() {
                     />
                   </GlowReveal>
                   <GlowReveal className="rounded-xl">
+                    <label htmlFor="contact-message" className="sr-only">Your Message</label>
                     <textarea
+                      id="contact-message"
                       placeholder="Your Message"
                       rows={4}
                       required

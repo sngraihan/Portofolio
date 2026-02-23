@@ -74,7 +74,7 @@ export default function Projects() {
               className="mb-2 text-lg font-light tracking-widest text-primary/70"
               delay={60}
             />
-            <h2 className="text-4xl font-light tracking-tight sm:text-5xl md:text-5xl xl:text-6xl">
+            <h2 className="text-4xl font-light tracking-tight sm:text-5xl md:text-5xl xl:text-6xl" aria-label="featured projects.">
               <TypingText
                 text="featured projects."
                 speed={60}
@@ -199,15 +199,27 @@ export default function Projects() {
                     </div>
                   </div>
 
-                  {/* Image Placeholder Section (Right) */}
+                  {/* Image Section (Right) */}
                   <div className="relative w-full lg:w-1/2 xl:w-[45%] bg-secondary/10 p-4 sm:p-6 lg:p-8 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-border/40">
                     <div className="group/img relative w-full h-full min-h-[150px] sm:min-h-[200px] lg:min-h-[350px] overflow-hidden rounded-2xl bg-secondary/20 border border-dashed border-primary/30 flex items-center justify-center transition-all duration-500 hover:border-primary/60 hover:bg-secondary/40">
-                       <div className="flex flex-col items-center gap-2 sm:gap-3 opacity-60 transition-opacity duration-300 group-hover/img:opacity-100">
+                      {project.image && project.image !== "/" ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          width={600}
+                          height={400}
+                          loading="lazy"
+                          className="w-full h-full object-contain rounded-2xl transition-transform duration-500 group-hover/img:scale-105"
+                        />
+                      ) : (
+                        <div className="flex flex-col items-center gap-2 sm:gap-3 opacity-60 transition-opacity duration-300 group-hover/img:opacity-100">
                           <div className="rounded-full bg-primary/10 p-2 sm:p-3">
-                             <ImageIcon className="h-6 w-6 sm:h-8 sm:w-8 text-primary/70" />
+                            <ImageIcon className="h-6 w-6 sm:h-8 sm:w-8 text-primary/70" />
                           </div>
                           <p className="text-muted-foreground text-xs sm:text-sm font-medium tracking-wider uppercase text-center px-4">Project Image Placeholder</p>
-                       </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

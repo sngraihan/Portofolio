@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://raihanasng-portofolio.vercel.app"),
   title: "Raihan Andi Saungnaga — AI Engineer Portfolio",
   description:
     "Portfolio of Raihan Andi Saungnaga, an aspiring AI Engineer and fresh graduate from University of Lampung. Explore projects, skills, and get in touch.",
@@ -28,11 +29,22 @@ export const metadata: Metadata = {
     "Next.js",
   ],
   authors: [{ name: "Raihan Andi Saungnaga" }],
+  alternates: {
+    canonical: "https://raihanasng-portofolio.vercel.app",
+  },
   openGraph: {
     title: "Raihan Andi Saungnaga — AI Engineer Portfolio",
     description:
       "Aspiring AI Engineer, fresh graduate from University of Lampung.",
     type: "website",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 600,
+        height: 800,
+        alt: "Raihan Andi Saungnaga",
+      },
+    ],
   },
 };
 
@@ -44,7 +56,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Using native Helvetica system fonts defined in CSS now */}
+        {/* Preconnect to CDN for faster resource loading */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link
           rel="stylesheet"
           type="text/css"

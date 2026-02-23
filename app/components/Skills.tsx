@@ -78,6 +78,9 @@ export default function Skills() {
           <img
             src={skill.icon}
             alt={skill.name}
+            width={36}
+            height={36}
+            loading="lazy"
             className="w-[1em] h-[1em] object-contain"
           />
         ) : (
@@ -136,7 +139,7 @@ export default function Skills() {
               className="mb-2 text-lg font-light tracking-widest text-primary/70"
               delay={60}
             />
-            <h2 className="text-4xl font-light tracking-tight sm:text-5xl md:text-5xl xl:text-6xl flex justify-center lg:justify-end">
+            <h2 className="text-4xl font-light tracking-tight sm:text-5xl md:text-5xl xl:text-6xl flex justify-center lg:justify-end" aria-label="tech stack.">
               <TypingText
                 text="tech stack."
                 speed={60}
